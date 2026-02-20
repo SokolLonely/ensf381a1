@@ -181,6 +181,8 @@ input[type="password"]{
     font-weight: bold; 
     border-radius: 12px; 
     padding: 10px;
+    cursor: pointer;
+    border-color: #f28c8c;
 }
 
 .customize-button{
