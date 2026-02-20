@@ -183,6 +183,18 @@ input[type="password"]{
     padding: 10px;
 }
 
+.customize-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color:#f28c8c;
+    font-weight: bold; 
+    border-radius: 12px; 
+    padding: 10px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -221,6 +233,7 @@ main{
     border: 20px;
     padding: 15px;
     margin: 15px;
+    text-align: center;
 }
 
 .current-season{
@@ -232,7 +245,6 @@ main{
 }
 
 .icecream_image{
-    display: flex;
     border-radius: 10px;
 }
 
