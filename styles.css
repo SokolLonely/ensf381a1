@@ -154,37 +154,30 @@ input[type="password"]{
 }
 
 .edit-order-button{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 100px;
-    height: 48px;
     background-color:#f28c8c;
     font-weight: bold; 
     border-radius: 12px; 
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-right: 14px;
     padding-left: 14px;
 }
 
 .confirm-order-button{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
-    width: 100px;
-    height: 24px;
     background-color:#f28c8c;
     font-weight: bold; 
     border-radius: 12px; 
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-right: 14px;
-    padding-left: 14px;
+    padding: 10px;
 }
 
 main{
