@@ -30,9 +30,7 @@ header{
     border-radius: 12px;
 }
 .homepage_main{
-    background-color: #fff8ee;
-    border-radius: 25px;
-    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,4 +41,13 @@ header{
 }
 .homepage_main section {
     margin-bottom: 40px;
+    background-color: #fff8ee;
+    border-radius: 25px;
+    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
+}
+.footer_homepage {
+    background-color: #f9e2c8;
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid #e4b48c;
 }
