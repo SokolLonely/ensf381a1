@@ -233,6 +233,7 @@ main{
     border: 20px;
     padding: 15px;
     margin: 15px;
+    text-align: center;
 }
 
 .current-season{
@@ -244,10 +245,7 @@ main{
 }
 
 .icecream_image{
-    display: flex;
     border-radius: 10px;
-    align-items: center;
-    text-align: center;
 }
 
 .tiles-container {
