@@ -281,7 +281,7 @@ main{
      border: none;
         border-radius: 12px;
         padding: 8px 14px;
-    cursor: pointer;
+    
 }
 .remove-button {
      background-color: #c94c4c;
@@ -290,5 +290,8 @@ main{
      font-weight: bold;
         border-radius: 12px;
         padding: 8px 14px;
-    cursor: pointer;
+    
+}
+.add-button:hover, .remove-button:hover{
+  cursor: pointer;
 }
