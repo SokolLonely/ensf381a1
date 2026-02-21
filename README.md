@@ -1,0 +1,1 @@
+The purpose of this assignment is to build the front-end of an Ice Cream Shop Ordering system. The focus will be on designing and organizing HTML components to simulate an Ice Cream Shop Ordering system
