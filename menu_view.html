@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <script src = "menu_view.js">   </script>
 </head>
 <body>
     <header class = "flexbox_homepage_header">   
@@ -26,6 +27,8 @@
             </select>
     </div>
 <br>
+
+
 <div class="menu_tiles">  
     <h2>Available Flavours</h2>
      <div class = "flex-wrapper">
@@ -103,36 +106,42 @@
     <h2>Seasonal Specials</h2>
      <div class = "flex-wrapper">
         
-        <tile class="icecream_tiles_special"> 
-            <h3>Mango Tango</h3>
-            <image src = "./Picture1.webp" class="icecream_image" width = "100" height = "100"> 
-            <p>$5.99 - $7.99</p>
-            <br>
-            <button class="add-button">Add</button>
-            <button class="remove-button">Remove</button>
-            <br>
-        </tile>
-        <tile class="icecream_tiles_special"> 
-            <h3>Vanilla Snowflake</h3>
-            <image src = "./Picture1.webp" class="icecream_image" width = "100" height = "100"> 
-            <p>$5.99 - $7.99</p>
-            <br>
-            <button class="add-button">Add</button>
-            <button class="remove-button">Remove</button>
-            <br>
-        </tile>
-        <tile class="icecream_tiles_special"> 
-            <h3>Maple Syrup</h3>
-            <image src = "./Picture1.webp" class="icecream_image" width = "100" height = "100"> 
-            <p>$5.99 - $7.99</p>
-            <br>
-            <button class="add-button">Add</button>
-            <button class="remove-button">Remove</button>
-            <br>
-        </tile>
+       <tile class="icecream_tiles_special"> 
+    <h3>Mango Tango</h3>
+    <img src="./Picture1.webp" class="icecream_image" width="100" height="100"> 
+    <p>$5.99</p>
+    <br>
+    <button class="add-button" onclick="addFlavour('Mango Tango')">Add</button>
+    <button class="remove-button" onclick="removeFlavour('Mango Tango')">Remove</button>
+    </tile>
+
+    <tile class="icecream_tiles_special"> 
+    <h3>Vanilla Snowflake</h3>
+    <img src="./Picture1.webp" class="icecream_image" width="100" height="100"> 
+    <p>$7.99</p>
+    <br>
+    <button class="add-button" onclick="addFlavour('Vanilla Snowflake')">Add</button>
+    <button class="remove-button" onclick="removeFlavour('Vanilla Snowflake')">Remove</button>
+    </tile>
+
+    <tile class="icecream_tiles_special"> 
+    <h3>Maple Syrup</h3>
+    <img src="./Picture1.webp" class="icecream_image" width="100" height="100"> 
+    <p>$6.00</p>
+    <br>
+    <button class="add-button" onclick="addFlavour('Maple Syrup')">Add</button>
+    <button class="remove-button" onclick="removeFlavour('Maple Syrup')">Remove</button>
+    </tile>
     </div>
+    </div>
+<br>
+<div class="cart">  
+    <h2>Cart</h2>
+     <ul id="orderList"> No items in cart</ul>
     </div>
 </div>
+
+
 </main>
     <footer class="footer_menu">
         <p> &copy; 2026 Sweet Scoop Corp. All rights reserved. Created by Khan and Ryabinkin.</p>
