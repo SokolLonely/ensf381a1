@@ -101,10 +101,21 @@ table th, table td {
     padding: 10px;
 }
 
+input[type="email"],
 input[type="text"],
 input[type="password"]{
     background-color: #fff8ee;
     border-color:#e4b48c; 
+}
+
+.message-box{
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    opacity: 0.75;
+    background-color: #f28c8c;
+    color: black;
+    border-radius: 12px; 
 }
 
 .login-button{
@@ -207,7 +218,7 @@ main{
     margin: 0 auto;
 }
 
-.login{
+.login, .signup{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,4 +342,17 @@ main{
 }
 .add-button:hover, .remove-button:hover{
   cursor: pointer;
+}
+
+.signup-button{
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.5;
+}
+
+.signup-button:hover{
+    background-color: #45A049;
+    opacity: 1.0;
 }
