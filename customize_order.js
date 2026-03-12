@@ -22,14 +22,38 @@ function update_timer()
 const timerInterval = setInterval(update_timer, 1000);
 //update_timer();
 function alert_checkbox(){
+update_price();
 if( ! document.getElementById("sprinkles").checked && !document.getElementById("nuts").checked&& !document.getElementById("caramel").checked)
 {
    alert("no toppings chosen");
 }
+
 }
 function alert_radiobutton(){
 if( ! document.getElementById("cup").checked && !document.getElementById("cone").checked)
 {
    alert("no cup/cone chosen");
 }
+}
+function update_price(){
+   const html_el = document.getElementById("total_price");
+    html_el.innerHTML = "";
+   let text = "Total Price: $"
+   let price = 6;
+   
+   if (document.getElementById("sprinkles").checked)
+      {
+         price +=1.5;
+      } 
+   if (document.getElementById("nuts").checked)
+      {
+         price +=1.5;
+      }
+   if (document.getElementById("caramel").checked)
+      {
+         price +=1.5;
+      }
+      //console.log(price);
+   html_el.innerHTML = text + (price).toFixed(2);
+   console.log(text + price);
 }
