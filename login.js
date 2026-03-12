@@ -27,9 +27,9 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
                     window.location.href = "menu_view.html";
                 },2000);
             }
-                else{
-                    messageBox.innerText = "Invalid username or password.";
-                    messageBox.style.display = "flex";
+            else{
+                messageBox.innerText = "Invalid username or password.";
+                messageBox.style.display = "flex";
 
             }
         }
