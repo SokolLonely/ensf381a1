@@ -10,10 +10,10 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
             const response = await fetch('https://jsonplaceholder.typicode.com/users');
             const users = await response.json();
 
-            let userFound = users.find(user =>
-                    user.username.toLowerCase() === username &&
+            let userFound = users.find(function(user){
+                return user.username.toLowerCase() === username &&
                     user.email === password
-                );
+            });
 
             const messageBox = document.getElementById("messageBox");
 
