@@ -112,7 +112,7 @@ input[type="password"]{
     display: none;
     flex-direction: column;
     padding: 10px;
-    opacity: 0.75;
+    opacity: 0.5;
     background-color: #f28c8c;
     color: black;
     border-radius: 12px; 

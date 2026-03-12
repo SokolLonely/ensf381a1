@@ -19,6 +19,9 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
 
             if(userFound){
                 messageBox.innerText = "Login successful!";
+                messageBox.style.display = "flex";
+                messageBox.style.backgroundColor = "lightgreen";
+                messageBox.style.color = "black";
 
                 setTimeout(()=>{
                     window.location.href = "menu_view.html";
@@ -26,6 +29,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
             }
                 else{
                     messageBox.innerText = "Invalid username or password.";
+                    messageBox.style.display = "flex";
+
             }
         }
         catch (error) {

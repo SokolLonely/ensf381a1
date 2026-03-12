@@ -75,6 +75,8 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     else{
         messageBox.innerText = "Signup successful! Redirecting...";
         messageBox.style.display = "flex";
+        messageBox.style.backgroundColor = "lightgreen";
+        messageBox.style.color = "black";
 
         setTimeout(function(){
             window.location.href = "login.html";
