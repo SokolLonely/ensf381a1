@@ -60,7 +60,7 @@ body{
     text-align: center;
 }
 
-.footer_homepage, .footer_login, .footer_summary {
+.footer_homepage, .footer_login, .footer_summary, .footer_signup {
     text-align: center;
     padding: 15px;
     border-top: 3px solid #e4b48c;
