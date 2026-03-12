@@ -15,8 +15,10 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     errors.push("Username must be between 3 and 20 characters.");
     }
 
-    if(!isNaN(username[0])){  // if first character is a number, error
-        errors.push("Username must start with a letter.");
+    let firstChar = username[0];
+
+    if(!(firstChar >= "A" && firstChar <= "Z") && !(firstChar >= "a" && firstChar <= "z")){
+            errors.push("Username must start with a letter.");
     }
 
     for(let i = 0; i < username.length; i++){
@@ -63,7 +65,7 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
         errors.push("Passwords do not match.");
     }
 
-    if(email.includes(" ") || !email.includes("@") || !email.includes(".")){
+    if(email.includes(" ") || !email.includes("@") || (!email.includes(".com") && !email.includes(".net") && !email.includes(".io"))){
         errors.push("Email must be a valid format.");
     }
 
