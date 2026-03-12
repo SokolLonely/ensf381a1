@@ -293,6 +293,9 @@ main{
  .make_bold{
     font-weight: bold;
 } 
+ .timer{
+    font-weight: bold;
+} 
 .current-season{
     display: flex;
     background-color: #fff8ee;
