@@ -45,15 +45,21 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
     let hasNumber = false;
     let hasSpecial = false;
 
+    let allowedSpecial = "!@#$%^&*()-_=+[]{}|;:'\",.<>?/`~";
+    let allowedLettersCapital = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let allowedLettersLower = "abcdefghijklmnopqrstuvwxyz";
+    let allowedNumber = "1234567890";
+
     for(let i = 0; i < password.length; i++){
 
         let ch = password[i];
 
-        if(ch >= 'A' && ch <= 'Z') hasUpper = true;
-        else if(ch >= 'a' && ch <= 'z') hasLower = true;
-        else if(ch >= '0' && ch <= '9') hasNumber = true;
+        if(allowedLettersCapital.includes(ch)) hasUpper = true;
+        else if(allowedLettersLower.includes(ch)) hasLower = true;
+        else if(allowedNumber.includes(ch)) hasNumber = true;
+        else if(allowedSpecial.includes(ch)) hasSpecial = true;
         else if(ch === ' ') errors.push("Password cannot contain spaces.");
-        else hasSpecial = true;
+        else errors.push("Passwork contains invalid characters")
     }
 
     if(!hasUpper) errors.push("Password must contain an uppercase letter.");
