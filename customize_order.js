@@ -25,14 +25,14 @@ function alert_checkbox(){
 update_price();
 if( ! document.getElementById("sprinkles").checked && !document.getElementById("nuts").checked&& !document.getElementById("caramel").checked)
 {
-   alert("no toppings chosen");
+   alert("Warning: no toppings chosen");
 }
 
 }
 function alert_radiobutton(){
 if( ! document.getElementById("cup").checked && !document.getElementById("cone").checked)
 {
-   alert("no cup/cone chosen");
+   alert("Warning: no cup/cone chosen");
 }
 }
 function update_price(){
