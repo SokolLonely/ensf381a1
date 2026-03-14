@@ -214,8 +214,7 @@ main{
     align-items: center;
     max-width: 1100px;
     padding: 20px;
-    margin-bottom: 70px;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
 }
 
 .login, .signup{
